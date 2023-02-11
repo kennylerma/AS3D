@@ -80,7 +80,7 @@ package as3d.primitives
 			trace("Indexes: " + indexes);*/
 		}
 		
-		override protected function setupProgram():void
+		protected function setupProgram():void
 		{
 			// // // CREATE SHADER PROGRAM // //
 			// When you call the createProgram method you are actually allocating some V-Ram space

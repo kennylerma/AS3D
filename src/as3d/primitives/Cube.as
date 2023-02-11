@@ -27,7 +27,7 @@ package as3d.primitives
 		private var _pos:Vector3D;
 		private var _modelViewProjection:Matrix3D = new Matrix3D();;
 		private var _lightPos:Vector.<Number>;
-		private var _useMipMap:Boolean = false;
+		private var _useMipMap:Boolean = true;
 		private var _texture:Texture;
 		
 		[Embed(source = "../../../assets/Kenny.jpg")]
@@ -95,7 +95,7 @@ package as3d.primitives
 			trace("Indexes: " + indexes);*/
 		}
 		
-		override protected function setupProgram():void 
+		protected function setupProgram():void 
 		{
 			// // // CREATE SHADER PROGRAM // //
 			// When you call the createProgram method you are actually allocating some V-Ram space
